@@ -1,11 +1,10 @@
-package com.jaxss.error;
+package org.jaxss.error;
 
 import java.io.Serializable;
 
 /**
  *
  * @author Chander Singh
- * @created.on January 4, 2008
  */
 public class JXSSError implements Serializable{
     private static final long serialVersionUID = 8791875160095388246L;
@@ -22,18 +21,33 @@ public class JXSSError implements Serializable{
         this.message = message;
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getMessage() {
         return message;
     }
 
+    /**
+     * 
+     * @return
+     */
     public String getType() {
         return type;
     }
 
+    /**
+     * 
+     */
     public boolean equals(Object obj) {
         if (obj instanceof JXSSError) {
             JXSSError jxssError = (JXSSError) obj;

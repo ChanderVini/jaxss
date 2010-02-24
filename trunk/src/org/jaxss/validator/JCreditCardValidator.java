@@ -1,7 +1,7 @@
 package org.jaxss.validator;
 
-import com.jaxss.exception.ValidationException;
 import org.apache.commons.validator.CreditCardValidator;
+import org.jaxss.exception.ValidationException;
 import org.jaxss.util.CBlanche;
 import org.jaxss.util.Diner;
 import org.jaxss.util.EnRoute;
@@ -64,7 +64,7 @@ public class JCreditCardValidator extends JValidator {
     /**
      * Validates if card number is valid for the Credit card type.
      * @param ccNbr Card Number to be validated
-     * @throws com.jaxss.exception.ValidationException If data is Null or Blank or Credit Card Type is invalid.
+     * @throws org.jaxss.exception.ValidationException If data is Null or Blank or Credit Card Type is invalid.
      * @return true if validation passes, else false.
      */
     public boolean validate (String ccNbr) throws ValidationException {        

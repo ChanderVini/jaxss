@@ -1,6 +1,6 @@
 package org.jaxss.validator;
 
-import com.jaxss.exception.ValidationException;
+import org.jaxss.exception.ValidationException;
 import org.jaxss.util.Types;
 
 /**
@@ -109,7 +109,7 @@ public class JTimeValidator extends JDateValidator {
      * It checks for characters allowed in String representation of time specified.
      * @param data String representation of time to be validated.
      * @return true if validation passes, else false.
-     * @throws com.jaxss.exception.ValidationException If data is Null or Blank.
+     * @throws org.jaxss.exception.ValidationException If data is Null or Blank.
      */
     public boolean validate (String data) throws ValidationException {
         return super.validate(data);
