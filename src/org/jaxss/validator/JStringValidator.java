@@ -1,6 +1,6 @@
 package org.jaxss.validator;
 
-import com.jaxss.exception.ValidationException;
+import org.jaxss.exception.ValidationException;
 import org.jaxss.util.Types;
 
 /**
@@ -94,7 +94,7 @@ public class JStringValidator extends JValidator {
      * Validates if String matches for all criteria specified for validating String.
      * @param data String to be validated
      * @return true if validation passes, else false.
-     * @throws com.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
+     * @throws org.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
      */
     public boolean validate(String data) throws ValidationException {
         return validateCommon(data);

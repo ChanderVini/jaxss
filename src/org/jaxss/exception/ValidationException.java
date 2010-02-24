@@ -1,4 +1,4 @@
-package com.jaxss.exception;
+package org.jaxss.exception;
 
 /**
  * Provides information on error occured while performing validation.

@@ -1,7 +1,7 @@
 package org.jaxss.validator;
 
-import com.jaxss.exception.ValidationException;
 import org.apache.commons.validator.ISBNValidator;
+import org.jaxss.exception.ValidationException;
 import org.jaxss.util.Types;
 
 /**
@@ -35,7 +35,7 @@ public class JISBNValidator extends JValidator {
     /**
      * Validates if ISBN is valid for the ISBN Type.
      * @param data ISBN to be validated
-     * @throws com.jaxss.exception.ValidationException If data is Null or Blank or ISBN Type is invalid.
+     * @throws org.jaxss.exception.ValidationException If data is Null or Blank or ISBN Type is invalid.
      * @return true if validation passes, else false.
      */
     public boolean validate (String data) throws ValidationException {

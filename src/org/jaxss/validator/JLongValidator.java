@@ -1,6 +1,6 @@
 package org.jaxss.validator;
 
-import com.jaxss.exception.ValidationException;
+import org.jaxss.exception.ValidationException;
 
 /**
  * Class for validating String representation of long.
@@ -40,7 +40,7 @@ public class JLongValidator {
     /**
      * Method for validating if data passed conforms as per minimum and maximum value specified.
      * @param data String representation of int to be validated.
-     * @throws com.jaxss.exception.ValidationException If data is Null or Blank.
+     * @throws org.jaxss.exception.ValidationException If data is Null or Blank.
      * @return true if validation passes, else false.
      */
     public boolean validate (String data) throws ValidationException {

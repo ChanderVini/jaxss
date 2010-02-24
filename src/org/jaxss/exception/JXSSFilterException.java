@@ -1,7 +1,8 @@
-package com.jaxss.exception;
+package org.jaxss.exception;
 
-import com.jaxss.error.JXSSError;
 import java.util.ArrayList;
+
+import org.jaxss.error.JXSSError;
 
 /**
  *

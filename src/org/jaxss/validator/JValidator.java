@@ -1,10 +1,11 @@
 package org.jaxss.validator;
 
-import com.jaxss.exception.ValidationException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.jaxss.exception.ValidationException;
 
 /**
  * Super class of the API, all validators in API extend this class.
@@ -159,7 +160,7 @@ public class JValidator {
      * If data is null or blank ValidationException is thrown.
      * @param data String to be validated
      * @return true if validation passes, else false.
-     * @throws com.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
+     * @throws org.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
      */
     protected boolean validateMaxlen (String data) throws ValidationException {
         if (data == null) {
@@ -183,7 +184,7 @@ public class JValidator {
      * If data is null or blank ValidationException is thrown.
      * @param data String to be validated
      * @return true if validation passes, else false.
-     * @throws com.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
+     * @throws org.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
      */
     protected boolean validateMinlen (String data) throws ValidationException {
         if (data == null) {
@@ -206,7 +207,7 @@ public class JValidator {
      * If data is null or blank ValidationException is thrown.
      * @param data String to be validated
      * @return true if validation passes, else false.
-     * @throws com.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
+     * @throws org.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
      */
     protected boolean validateAllowedchars (String data) throws ValidationException {
         if (data == null) {
@@ -233,7 +234,7 @@ public class JValidator {
      * If data is null or blank ValidationException is thrown.
      * @param data String to be validated
      * @return true if validation passes, else false.
-     * @throws com.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
+     * @throws org.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
      */
     protected boolean validateCharpatterns (String data) throws ValidationException {
         if (data == null) {
@@ -256,7 +257,7 @@ public class JValidator {
      * Utilizes all validate methods specified in the class to validate String
      * @param data String to be validated
      * @return true if validation passes, else false.
-     * @throws com.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
+     * @throws org.jaxss.exception.ValidationException If data is null or blank ValidationException is thrown.
      */
     protected boolean validateCommon (String data) throws ValidationException {
         boolean isValid = validateMinlen(data);        

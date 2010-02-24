@@ -1,8 +1,9 @@
 package org.jaxss.validator;
 
-import com.jaxss.exception.ValidationException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+
+import org.jaxss.exception.ValidationException;
 import org.jaxss.util.Types;
 
 /**
@@ -110,7 +111,7 @@ public class JDateValidator extends JValidator {
      * <br>
      * It checks for characters allowed in String representation of date specified.
      * @param data String representation of date to be validated.
-     * @throws com.jaxss.exception.ValidationException If data is Null or Blank.
+     * @throws org.jaxss.exception.ValidationException If data is Null or Blank.
      * @return true if validation passes, else false.
      */
     public boolean validate (String data) throws ValidationException {
